@@ -1,0 +1,1209 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Quattrocento; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    /* font-family: 'Tinos', serif; */
+    /* font-family: 'Playfair Display SC', serif; */
+}
+#jump {
+    color: white; 
+    font-size: 2em;
+    transition: transform 50ms;
+    animation: jump 2s 8;
+  }
+  @keyframes jump {
+    0% { transform: translateY(10px) }
+    50% { transform: translateY(0px) }
+    100% { transform: translateY(10px) }
+  }
+  .ssbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40% !important;
+    margin: 20px;
+    min-width: 275px;
+  }
+  .staff-row {
+   width: 90%;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .staff-card {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 250px;
+    margin: 10px 5px;
+          box-shadow: 0px 0px 5px black; 
+      -webkit-box-shadow: 0px 0px 5px black; 
+      -moz-box-shadow: 0px 0px 5px black; 
+  }
+
+  .staff-card p, .staff-card img {
+    margin-bottom: 5px; 
+    text-align: center;
+    width: 100%;
+  }
+  .staff-card p:nth-child(1) {
+   color: red; 
+  }
+  #contact {
+   margin-top: -5px;
+    padding-top: 10px;
+  }
+  .contact-row {
+    width: 100%;
+    display: flex;
+    Justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+  }
+  .map {
+    width: 60%; 
+    min-width: 380px;
+  }
+  .list div {
+    font-size: 20px;
+    margin: 10px auto; 
+    color: black;
+    text-align: center;
+  }
+  .list {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .intro-box-title {
+   font-size: 30px;
+   margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+    max-width: 1175px;
+  }
+  .intro {
+    box-shadow: 100px 0px 100px black; -webkit-box-shadow: 100px 0px 100px black; -moz-box-shadow: 100px 0px 100px black;
+   width: 100%;
+   background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-text {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 22px;
+      max-width: 1175px;
+  }
+  .quote {
+    line-height: 130%;
+   font-size: 60px;
+   color: black;
+   padding: 45px 0px;
+  }
+  .intro-logo img {
+    width: 100%; 
+    min-width: 210px;
+  }
+  .red {
+    color: #fc3a3a; 
+  }
+  .intro-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    max-width: 580px;
+    padding: 20px;
+  }
+  .intro-logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #intro-button {
+    width: 50%;
+  }
+  @media (max-width: 1400px) {
+    .quote {
+     font-size: 50px; 
+    }
+  }
+    @media (max-width: 1200px) {
+    .quote {
+     font-size: 42px; 
+    }
+      .map {
+        width: 80%; 
+      }
+  }
+    @media (max-width: 1000px) {
+    .quote {
+     font-size: 35px; 
+    }
+      .intro-logo img {
+        align-self: flex-end; 
+        margin-bottom: 50px;
+      }
+  }
+      @media (max-width: 855px) {
+    .quote {
+     font-size: 35px; 
+    }
+      .intro-logo {
+        display: none; 
+      }
+      .intro-box {
+        width: 50%; 
+      }
+  }
+        @media (max-width: 680px) {
+    .quote {
+     font-size: 30px; 
+    }
+          .intro-box-title {
+            font-size: 22px; 
+          }
+  }
+  @media (max-width: 400px) {
+          .quote {
+            font-size: 24px;
+            padding: 20px 0px;
+          }
+          .intro-box-title {
+            font-size: 18px; 
+            margin-bottom: 10px;
+          }
+          .list div {
+            font-size: 16px; 
+          }
+          .into-box {
+            padding: 15px;
+          }
+    #intro-button {
+      width: 90%;
+    }
+  }
+  
+  .document-container a {
+   text-decoration: none;
+    font-size: .8em;
+    color: white;
+   }
+  .document-container {
+    width: 13%;
+    min-width: 140px;
+    margin: 15px;
+    cursor: pointer;
+  }
+  .document-hover-box {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    opacity: 1;
+    padding: 5px;
+    transition: opacity 300ms;
+    color: white;
+  }
+  .document-container img {
+    width: 100%; 
+  }
+  .youtube-container {
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+  }
+  #youtube-mobile {
+   display: none; 
+  }
+  @media (max-width: 570px){
+    #youtube-mobile{ display: initial; }
+    #youtube-desktop { display: none; } 
+    .youtube-container {
+      width: 300px;
+      height: 170px;
+    }
+  }
+  #emi-programs {
+   background: linear-gradient(#b0b0b0, white);
+    padding-top: 40px;
+  }
+  .volunteer-box {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    max-width: 75%;
+    margin: 20px auto;
+  }
+  .volunteer-box div {
+   width: 100%;
+  }
+  .volunteer-box:first-child {
+    font-size: 1.2em;
+  }
+  .view-container-border, .mv-daynames-table, .ui-rtsr-unselected {
+   background-color: #fc3a3a !important; 
+  }
+  .st-dtitle {
+   background: rgba(231, 47, 52, 0.38) !important; 
+  }
+	.shadow {
+      box-shadow: 0px 0px 5px; 
+      -webkit-box-shadow: 0px 0px 5px; 
+      -moz-box-shadow: 0px 0px 5px; 
+    }
+  .broad-shadow {
+       box-shadow: 0px 0px 20px #6e6e6e;
+    -moz-box-shadow: 0px 0px 20px #6e6e6e;
+    -webkit-box-shadow: 0px 0px 20px #6e6e6e; 
+  }
+    .broad-shadow-black {
+       box-shadow: 0px 0px 20px black;
+    -moz-box-shadow: 0px 0px 20px black;
+    -webkit-box-shadow: 0px 0px 20px black; 
+  }
+   .row-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1425px;
+    justify-content: space-around;
+     margin: 40px auto;
+  }
+  .overlay-box {
+  opacity: 0;
+  background-color: rgba(8, 7, 7, 0.71);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+    transition: opacity 300ms;
+    text-decoration: underline;
+}
+.overlay-box:hover {
+  opacity: 1;
+}
+  .image-bg-box:hover > .small-overlay-text {
+       background-color: rgba(8, 7, 7, 0.71);
+  }
+  .image-bg-box {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .small-overlay-text {
+    font-size: 35px;
+    color: white;
+    line-height: 110%;
+    padding: 15px;
+    text-align: center;
+           background-color: rgba(8, 7, 7, 0.71);
+        transition: background-color 300ms;
+  }
+  #pathway {
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/d13397d6-91fb-46b5-b673-32da409acddb_rl_ph005.jpg');
+  }
+  #socialservices {
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/02acb4eb-fe61-4b80-a649-66822fbfd6dc_1Akron_Dad_and_son_in_front_of_Salvation_Army_Shield_2.png'); 
+  }
+  #babc {
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/eac919ab-ed96-48a8-9e42-dd5f87530570_DSC_1029wbw.jpg'); 
+  }
+  #wblac {
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/b2c699c0-8658-4079-9290-6cdd8ed36c22_WBLAC_2.jpg'); 
+  }
+  #harbor {
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/0ce6783d-7679-4fe2-901f-8ecf4203bebb_B_W_hands_with_wedding_band.png'); 
+  }
+  #arc {
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/49bded5e-ef91-4b11-8476-8a16d70cfe08_shelter.jpg'); 
+  }
+  .title {
+  font-size: 35px;
+  text-align: center;
+  margin: 40px 0;
+}
+  i {
+   transition: all 300ms; 
+  }
+   #footer {
+     position: fixed;
+     bottom: 0;
+     z-index: -101;
+    background-color: #332E27;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .link-box {
+    width: 225px; 
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    padding: 20px;
+    margin: 0 20px;
+  }
+  .footer-link a {
+    color: red;
+    text-decoration: none;
+  }
+  .footer-link a:hover {
+    color: red;
+    cursor:pointer;
+  }
+  .title-box {
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+   width: 95%;
+  }
+  .section-title {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin: 20px;
+  }
+  
+  #video-background {
+    /*  making the video fullscreen  */
+      position: fixed;
+      top: 0;
+      /* left:50%; */
+      min-width: 100vw; 
+      min-height: 80%;
+      width: 100vw !important;
+      height: 80%;
+      overflow: hidden;
+      /* transform: translate(-50%, -50%); */
+      z-index: -100;
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/73a8dbd6-cf0e-4a28-abd8-506abf3fe246_Home-Page-background-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+    transition: 12000ms transform;
+  }
+  
+  #det {
+          position: fixed;
+      top: 0;
+      /* left:50%; */
+      min-width: 100vw; 
+      min-height: 100%;
+      width: 100vw !important;
+      height: 100%;
+      overflow: hidden;
+      /* transform: translate(-50%, -50%); */
+      z-index: -102;
+    background-color: black;
+  }
+
+   .title-box {
+   display: flex;
+   justify-content: center;
+    align-items: center;
+      margin-top: 10px;
+  }
+  .section-title {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin: 20px;
+  }
+  .ways-row {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+  }
+  .ways-we-help {
+    width: 350px;
+    box-shadow: 0px 0px 20px #6e6e6e;
+    -moz-box-shadow: 0px 0px 20px #6e6e6e;
+    -webkit-box-shadow: 0px 0px 20px #6e6e6e;
+
+    background-color: white;
+
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+  }
+  
+
+  .box-title {
+    border-bottom: 2px solid red;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 140%;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    width: 50%;
+    max-width: 1425px;
+    min-width: 90%;
+  }
+  .box-sub-title {
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 140%;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 50%;
+    max-width: 1425px;
+    min-width: 90%;
+    text-decoration: none;
+  }
+  .ways-description-title {
+    font-size: 30px;
+    text-align:center;
+    margin: 10px 20px;
+    line-height: 125%;
+  }
+  .ways-description {
+    font-size: 15px;
+    margin: 10px 20px;
+    text-align: center;
+  }
+  .ways-we-help-button {
+    padding: 10px;
+    background-color: #FC3a3a;
+    width: 80%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto 20px auto;
+    		cursor: pointer;
+  }
+
+  .ways-we-help-button a {
+     color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  #everything-under-top {
+    position: absolute;
+    top:80%;
+    width: 100%;
+}
+  
+  .general-header {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+/*    background-color: rgba(77, 77, 77, 0.397); */
+    padding:10px 0;
+    position: absolute;
+    top: 0;
+    box-shadow: 0px 0px 5px black;
+    -webkit-box-shadow: 0px 0px 5px black;
+    -moz-box-shadow: 0px 0px 5px black;
+}
+
+  #header {
+    background-color: #0000008f; 
+    transition: all 2000ms;
+  }
+
+#header-sticky {
+    background-color: white;
+position: fixed;
+top: 0;
+color: black;
+padding: 20px 0;
+  transition: 300ms padding;
+z-index: 1000;
+border-bottom: 2px solid red;
+}
+  
+  .header-title {
+    font-size: 26px;
+  }
+  
+  .header-title-main {
+    font-size: 25px; 
+    color: white;
+      }
+  
+  .overlay {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 80%;
+    z-index: -99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(238, 58, 67, 0.41)); */
+    background-color: rgba(0,0,0,.3)
+}
+
+#overlay {
+    height: 30% !important;
+    margin: 20px 40px;
+/*    background-color: rgba(0,0,0,.75);
+    box-shadow: 0px 0px 5px black;
+    -webkit-box-shadow: 0px 0px 5px black;
+    -moz-box-shadow: 0px 0px 5px black; 
+    transition: all 2000ms;
+    opacity: 0;
+  transform: translateY(20px); */
+}
+/* #footer {
+    font-family: sans-serif;         
+} */
+
+#menu-container {
+    position: fixed;
+    right:0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100%;
+    background-color: #332E27;
+    transition: 500ms transform ease-in-out;
+    display: flex;
+  z-index:1000;
+}
+
+.menu-options-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-right: 20px;
+}
+
+.menu-option {
+  padding: 30px 30px 30px 60px;
+    border-bottom: 1px solid grey;
+    color: white;
+    font-size: 22px; 
+    display: flex;
+  flex-direction: column;
+    justify-content: space-around;
+}
+  
+  .close-menu-section {
+    width: 20%; 
+  }
+  
+  .menu-option a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .option, .option a {
+   	transition: all 400ms; 
+    text-decoration: none;
+  }
+  
+  .menu-sub-option {
+    width: 90%;
+    font-size: .7em;
+    padding: 15px 0 0 0;
+    margin: 15px 0 0 0;
+    border-top: 1px solid grey;
+    align-self: center;
+    transition: all 400ms;
+  }
+  
+ 
+  
+  .option:hover, .option a:hover {
+     color: rgb(238, 58, 67);
+     cursor: pointer;
+     transform: scale(1.01);
+  }
+
+  
+  .menu-sub-option:hover {
+    width: 100%; 
+    color: rgb(238, 58, 67);
+    cursor: pointer;
+  }
+  
+.logo img {
+    height: 50px;
+    margin: 0 20px;
+}
+
+.top-section {
+    height: 100%;
+}
+
+.nav-link, .nav-link a {
+    font-size: 25px;
+    color:white;
+    cursor: pointer;
+  transition: color 400ms;
+  transition: transform 400ms;
+  text-decoration: none;
+  white-space: nowrap;
+}
+  .nav-link, .sticky-nav-link {
+    margin-left: 40px; 
+  }
+.sticky-nav-link, .sticky-nav-link a {
+    cursor: pointer;
+    font-size: 20px;
+    color:black;
+    transition: color 400ms;
+  transition: transform 400ms;
+  text-decoration: none;
+    white-space: nowrap;
+}
+  
+    
+  .sticky-nav-link:hover .svg-inline--fa, .sticky-nav-link:hover .sticky-nav-link i {
+      color: rgb(238, 58, 67);
+      cursor: pointer;
+  }
+  
+  .sticky-nav-link:hover {
+    text-decoration: underline; 
+  }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-links {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 40px;
+}
+  
+  .connect-stripe {
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: space-around;
+    box-shadow: 0px 30px 30px black;
+    -webkit-box-shadow: 0px 30px 30px black;
+    -moz-box-shadow: 0px 30px 30px black;
+  }
+  
+  .top-stripe {
+        background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: space-around; 
+  }
+  
+  .menu-nav-button {
+   display: none; 
+  }
+  
+  @media (max-width: 1450px) {
+    .sticky-nav-link {
+      margin-left: 20px; 
+      font-size: 16px;
+    }
+    
+  }
+    @media (max-width: 1325px) {
+    .sticky-nav-link {
+      margin-left: 20px; 
+      font-size: 16px;
+    }
+    .header-title {
+     display: none; 
+    }
+    
+  }
+      @media (max-width: 1090px) {
+    .sticky-nav-link {
+      margin-left: 20px; 
+      font-size: 16px;
+      display: none;
+    }
+    .menu-nav-button {
+     display: initial !important; 
+    }
+    .header-title {
+      display: initial; 
+      font-size: 20px;
+      text-align: center;
+    }
+    
+  }
+  
+/* General */
+.clear {
+  clear: both;
+}
+/* Banner */
+.banner {
+  border-bottom: 10px solid #4b4b4b;
+  display: inline-block;
+  width: 100%;
+}
+/* Join */
+#join {padding: 50px 0;}
+#join h2 {font-size: 2.5em;}
+/* Civic */
+#civic {
+  padding: 0 25px 50px;
+}
+.thank-you {
+  text-align: center;
+  background: #e51d2e;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  padding-top: 56.25%;
+  padding-top: 17.80%;
+}
+.thank-you-copy-wrapper {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .thank-you {
+    padding-top: 30%;
+    font-size: 15px;
+  }
+  #fb {
+   display: none !important; 
+  }
+}
+/* Blog */
+#blog{
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+}
+#blog .row-fluid {
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.blog-card {
+  width: 31%;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  margin: 30px;
+  min-height: 430px !important;
+  display: flex !important;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+      box-shadow: 0px 0px 10px #444; 
+    -webkit-box-shadow: 0px 0px 10px #444; 
+    -moz-box-shadow: 0px 0px 10px #444; 
+}
+/* Newsletter */
+#newsletter {
+  background: url("https://s3.amazonaws.com/usc-cache.salvationarmy.org/baf20d9e-3df0-44a5-8eeb-18f2fb661548_newsletterBackgroundDesktop.jpg") no-repeat left;  /* Full height */
+  padding-bottom: 50px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  border-width: 0px 0px 10px 0px;
+  border-color: FF2A36
+}
+.newsletter {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+/* Wufoo Form */
+#wufoo-me9tu2k0ag75oc, #wufooFormme9tu2k0ag75oc {
+  border-radius: 10px !important;
+}
+/* Salmich Story */
+.salmich-story {
+  padding: 50px 20px;
+}
+.salmich-story .story-photo {
+  text-align: center;
+}
+.salmich-story .story-photo img {
+  border-radius: 10px;
+}
+.salmich-story .caption {
+  margin: 30px 0 0 10px;
+}
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  #blog .blog-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+  #newsletter {
+    background: #333;
+  }
+}
+@media screen and (min-width: 768px) {
+  #new_hero {
+    position: relative;
+  }
+  #copy-wrapper {
+    position: absolute;
+    top: 250px !important;
+  }
+  
+}
+@media screen and (max-width: 980px) {
+  .salmich-story .story-photo, .salmich-story .caption {
+    width: 100% !important;
+    text-align: center;
+    margin: 0;
+  }
+  .salmich-story .caption {
+    margin-top: 20px;
+  }
+}
+  #sched {
+   display: none; 
+  }
+@media screen and (max-width: 768px) {
+  .salmich-story .caption {
+    text-align: center;
+  }
+  .volunteer-box {
+    padding: 10px;
+    max-width: 90%;
+  }
+  #intro-button {
+   width: 90%; 
+  }
+  #google-schedule, #sch {
+   display: none; 
+  }
+  #sched {
+   display: initial; 
+  }
+}
+@media screen and (min-width: 573px) {
+  .banner {
+    height: 250px;
+    height: 15.625vw;
+    background: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/db308184-1a59-499d-8379-ab7839038d5a_estatePlanningBanner-min.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 573px) {
+  .banner {
+    width: 100%;
+    max-width: 573px;
+    margin: 0 auto;
+    height: 1038px;
+    height: 181.1518vw;
+    background: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/9a9a59b0-e363-40c4-a8e4-acf991e0b6f2_estatePlanningBannerMobile-min.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .ribbon {
+    width: 80% !important;
+  }
+}
+/* ribbons */
+.ribbon {
+ font-size: 16px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+ width: 50%;
+ position: relative;
+ background: #E8112D;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #AF1E2D;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #7C2128 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+.non-semantic-protector { position: relative; z-index: 1; }
+  /*Homepage Specific Properties*/
+  #stgyellow1 {
+    display: none;
+  }
+  #hero_copy {
+    width: 100% !important;
+    max-width: 550px;
+  }
+  #copy-wrapper {
+    position: absolute;
+    top: 250px;
+    padding-left: 10%;
+    padding-right: 10%;
+    letter-spacing: 1px;
+  }
+  #hero_copy h1 {
+    font-size: 3em;
+    letter-spacing: 1px;
+    color: #e4002b;
+    line-height: 66px;
+  }
+  #hero_copy h4 {
+    font-size: 24px;
+    font-family: "Times New Roman", serif;
+    width: 380px;
+    color: #000000;
+    line-height: 40px;
+  }
+  @media screen and (max-width: 1180px) {
+    #copy-wrapper {
+      padding-left: 5%; padding-right: 5%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    #hero_copy h1 {
+      font-size: 2.5em;
+    }
+    #hero_copy {
+      max-width: 400px;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    #copy-wrapper {
+      top: 170px;
+    }
+    #sub-sticky, #sub {
+      display: none; 
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #copy-wrapper {
+      position: inherit;
+      text-align:center;
+      padding-bottom: 20px;
+      background: #332e27;
+      margin: 0px;
+      padding-top: 20px;
+      }
+      #hero_copy, #hero_copy h4 {
+        width: 100%; max-width: 100%;
+      }
+      #hero_copy h1 {
+        font-size: 2em; text-shadow: none; color: #fff; line-height: 40px;
+      }
+      #hero_copy h4 {
+        font-size: 20px; text-shadow: none; color: #fff;
+      }
+      #new_hero {
+                    background: url("https://s3.amazonaws.com/usc-cache.salvationarmy.org/52e977ab-a7da-49de-9885-7d6b44b8c1c2_EMI_Christmas_HMPG.jpg") right no-repeat;
+        background-size: cover;
+        height: 250px;
+      }
+      .btn {
+        margin-bottom: 10px;
+      }
+      .three_blocks .span4 {
+        padding: 20px 15px;
+        text-align: center;
+      }
+    }
+  .EDSalert {
+    width: 89%;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 27px;
+    padding: 15px;
+    background-color: #f2dede;
+    border: 1px solid #ebcccc;
+    color: #a94442;
+    border-radius: .25em;
+    position: relative;
+}
+  .EDSalert h2 {margin-top: 0px;}
+  .closer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  margin: 10px;
+}
+@media screen and (min-width: 768px) {
+  #wrapper > div.stripe.light.home3 {
+  height: 100%;
+  background: linear-gradient(90deg, #E4E4E4  50%, #C5C2BB  50%);
+  }
+  #new_hero {
+	            background: url("https://s3.amazonaws.com/usc-cache.salvationarmy.org/52e977ab-a7da-49de-9885-7d6b44b8c1c2_EMI_Christmas_HMPG.jpg") right no-repeat;
+    background-size: cover;
+    height: 515px;
+  }
+}
+#tsablack { background-color: #000000}
+#bellringer { background-color: #322831}
+#tsawhite { background-color: #ffffff}
+#tsagrey4 { background-color: #ecebe8}
+#tsagrey3 { background-color: rgb(218,215,210)}
+#tsared { background-color: #FC3a3a}
+#tsagrey { background-color: #ECEBE8}
+#tsagrey2 { background-color: #DAD7D2}
+#tsabrown { background-color: #332e27}
+#bedbreadyellow {background-color: #fbd513}
+#emaginePurple { background-color: #812883}
+#stgyellow { background-color: #ffc813}
+#stgyellow1 { background-color: #624500}
+#stgyellow2 { background:url(https://s3.amazonaws.com/usc-cache.salvationarmy.org/e5011302-1b26-41f5-ba62-78a5b2ce744d_EMI-Easter-Homepage-Hero.jpg) no-repeat center;}
+#redkettle { background:url(https://s3.amazonaws.com/usc-cache.salvationarmy.org/8768af06-6937-433a-b4ba-7e0fefb2077e_RedKettleReason2015_SnowfallKids.jpg) no-repeat center;}
+#bedbread { background:url(https://s3.amazonaws.com/usc-cache.salvationarmy.org/cbb12622-9417-4243-a594-168e4a45e0a3_LiveStreamBackGround_HomePage.gif) no-repeat center;}
+#QuarterOneEvents {
+  width: 850px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+.wufoo {
+font-family: "trajan-pro","trajan-pro-3-n4","trajan-pro-3",serif !important;
+letter-spacing: .01em;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+  
+  .header {
+   display: none; 
+  }
+  
+  .social li {
+    margin: 15px 20px; 
+    transition: transform 300ms;
+  }
+  .social li:hover {
+    transform: scale(1.1);
+    
+  }
+    @media screen and (max-width: 980px) {
+      .fb-page iframe {
+        width: 450px !important; 
+      }
+      #locations, #donate, #locations-sticky, #donate-sticky {
+        display: none; 
+      }
+    }
+  @media (max-width: 400px) {
+    #everything-under-top {
+      margin-bottom: 0px !important;
+    }
+    #volunteer, #blog, #church {
+     padding-top: 1px !important; 
+    }
+    .ways-description {
+     padding: 10px; 
+    }
+    .map {
+     min-width: 0px;
+     width: 90%;
+    }
+    .image-bg-box {
+      margin: 20px; 
+    }
+  }
+  .row-cards {
+    justify-content: center; 
+  }

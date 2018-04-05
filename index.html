@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salvation Army Washtenaw County - Ann Arbor and Ypsilanti</title>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">            
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Playfair+Display+SC|Tinos" rel="stylesheet">    
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- sticky header -->
+<section class="top-section">
+    <header class="general-header" id="header-sticky">
+    <div class="flex logo"><img alt="" src="http://westernusa.salvationarmy.org/templates/symphony/static_resources/images/global/shield.svg" style="width:50px;height:50px" />
+    <div class="header-title">Washtenaw County</div>
+    </div>
+    
+    <div class="flex header-links">
+    <div class="flex sticky-nav-link" id="donate-sticky"><a href="https://give.salvationarmyusa.org/site/Donation2;jsessionid=00000000.app340a?df_id=32417&amp;mfc_pref=T&amp;32417.donation=form1&amp;_ga=2.94010971.79739204.1513607092-160856993.1512676693" target="_blank"><i aria-hidden="true" class="fa fa-heart" style="margin-right: 5px">&nbsp;</i>Donate</a></div>
+    
+    <div class="flex sticky-nav-link" id="donate-sticky" onclick="scrollToSection('volunteer')"><i aria-hidden="true" class="fas fa-child" style="margin-right: 5px">&nbsp;</i>Volunteer</div>
+    <!-- 
+    <div class="sticky-nav-link" id="locations-sticky"><a href="http://centralusa.salvationarmy.org/emi/CorpsCommunityCenters?_ga=2.139644851.1449703994.1514155887-2105601430.1512061902&cm_mc_uid=99591822825115120619039&cm_mc_sid_51410000=1514155888" target="_blank"><i aria-hidden="true" class="fa fa-map-marker" style="margin-right:5px">ÃÂÃÂ </i>Locations</a></div> -->
+    
+    <div class="sticky-nav-link" id="locations-sticky" onclick="scrollToSection('schedule')"><i aria-hidden="true" class="fas fa-hospital" style="margin-right:5px">&nbsp;</i>Ann Arbor</div>
+    
+    <div class="flex sticky-nav-link" id="donate-sticky" onclick="scrollToSection('church')"><i aria-hidden="true" class="fas fa-hospital" style="margin-right: 5px">&nbsp;</i>Ypsilanti</div>
+    
+    <div class="sticky-nav-link" id="locations-sticky" onclick="scrollToSection('social-services')"><i aria-hidden="true" class="fas fa-users" style="margin-right:5px">&nbsp;</i>Social Services</div>
+    
+    <div class="sticky-nav-link" id="locations-sticky" onclick="scrollToSection('contact')"><i aria-hidden="true" class="fas fa-phone" style="margin-right:5px">&nbsp;</i>Contact</div>
+    
+    <div class="menu-nav-button sticky-nav-link" id="menu" onclick="showNav()">Menu<i aria-hidden="true" class="fa fa-bars" style="margin-left:10px">&nbsp;</i></div>
+    </div>
+    </header>
+    <!-- main nav 
+    
+    <header class="general-header" id="header">
+    <div class="flex logo"><img alt="" id="logo" src="http://westernusa.salvationarmy.org/templates/symphony/static_resources/images/global/shield.svg" style="width:60px;height:60px" />
+    <div class="header-title-main">Conner Creek
+    <div class="header-title-main" id="sub" style="font-size: 15px">Doing The Most Good on the Eastside.</div>
+    </div>
+    </div>
+    
+    <div class="flex header-links">
+    <div class="flex nav-link" id="donate"><a href="https://give.salvationarmyusa.org/site/Donation2;jsessionid=00000000.app340a?df_id=32417&mfc_pref=T&32417.donation=form1&_ga=2.94010971.79739204.1513607092-160856993.1512676693" target="_blank"><i aria-hidden="true" class="fa fa-heart" style="margin-right: 5px">ÃÂÃÂ </i>Donate</a></div>
+    
+    <div class="nav-link" id="locations"><a href="http://centralusa.salvationarmy.org/emi/CorpsCommunityCenters?_ga=2.139644851.1449703994.1514155887-2105601430.1512061902&cm_mc_uid=99591822825115120619039&cm_mc_sid_51410000=1514155888" target="_blank"><i aria-hidden="true" class="fa fa-map-marker" style="margin-right:0px">ÃÂÃÂ </i> Locations</a></div>
+    
+    <div class="nav-link" id="menu" onclick="showNav()">Menu<i aria-hidden="true" class="fa fa-bars" style="margin-left:10px">ÃÂÃÂ </i></div>
+    </div>
+    </header>
+    <!-- menu -->
+    
+    <section>
+    <div id="menu-container">
+    <div class="menu-options-container" id="menu">
+    <div class="menu-option">
+    <div class="option" onclick="scrollToSection('home')">Home</div>
+    </div>
+    
+    <div class="menu-option">
+    <div class="option"><a href="https://give.salvationarmyusa.org/site/Donation2;jsessionid=00000000.app340a?df_id=32417&amp;mfc_pref=T&amp;32417.donation=form1&amp;_ga=2.94010971.79739204.1513607092-160856993.1512676693">Donate</a></div>
+    </div>
+    
+    <div class="menu-option">
+    <div class="option" onclick="scrollToSection('volunteer')">Volunteer</div>
+    </div>
+    
+    <div class="menu-option">
+    <div class="option" onclick="scrollToSection('schedule')">Events/Schedule</div>
+    </div>
+    
+    <div class="menu-option">
+    <div class="option" onclick="scrollToSection('church')">Church</div>
+    </div>
+    
+    <div class="menu-option">
+    <div class="option" onclick="scrollToSection('social-services')">Social Services</div>
+    </div>
+    
+    <div class="menu-option">
+    <div class="option" onclick="scrollToSection('contact')">Contact</div>
+    </div>
+    </div>
+    
+    <div class="close-menu-section">
+    <div class="close-button" onclick="hideNav()"><div aria-label="Close" class="close" style="width:100%;color:white;cursor:pointer;text-align:center;font-size:75px;margin:40px auto">&times;</div></div>
+    </div>
+    </div>
+    </section>
+    <!-- top background -->
+    
+    <div id="everything">
+    <section id="video-background"><!-- <img alt="pic" id="video-background" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/4e6e9157-d117-4e2b-b0e0-9d5aac2d22c6_SalvationArmy-4800.jpg" /> --><!-- video option --><!--<iframe allowfullscreen="" frameborder="0" id="video-background" mozallowfullscreen="" src="https://player.vimeo.com/video/247832933?autoplay=1&loop=1&title=0&byline=0&portrait=0" webkitallowfullscreen=""></iframe><video autoplay="" id="video-background" loop="" muted="" plays-inline=""><source src="https://player.vimeo.com/video/247832933" type="video/mp4" /></video> --></section>
+    <!-- logo-overlay -->
+    
+    <section class="overlay" id="home"><img id="overlay" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/bf423ebe-85f3-484e-8efc-96402cf3b64f_DTMG-whitetext.png" title="dtmg" />
+    <div id="arrow" onclick="scrollToSection('arrow')" style="cursor: pointer; position: absolute; bottom: 5%; border-radius: 50%; padding: 5px 10px;"><i class="fas fa-arrow-down" id="jump">&nbsp;</i></div>
+    </section>
+
+    
+    <section id="everything-under-top" style="margin-bottom:466px"><!--Ribbon Title-->
+
+    <div class="intro">
+        <div class="box-sub-title">Our Mission Statement</div>
+        <div class="intro-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Salvation Army, an international movement, is an evangelical part of the universal Christian Church. Its message is based on the Bible. Its ministry is motivated by the love of God. Its mission is to preach the gospel of Jesus Christ and...</div><div class="intro-box-title">to meet human needs in His name without discrimination.</div>
+    </div>
+    
+    <div id="volunteer" style="width:100%;background-color: white;padding-top: 40px; ">
+    <div class="box-title">Volunteer Opportunities</div>
+    
+    <div class="ways-row">
+    <div class="ways-we-help"><img alt="bbtruck" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/e584fb64-732d-4e75-8bb5-6a3289b291f5_reading-to-kids.jpg" style="width: 100%" />
+    <div class="title-box">
+    <div class="ways-description-title">Nursery Worker</div>
+    </div>
+    
+    <div class="ways-description">We need people who can watch infant children during our programs and activities.</div>
+    
+    <div class="ways-description">Mondays: 6:15pm - 8pm</div>
+    
+    <div class="ways-description">Wednesdays: 6pm - 8pm</div>
+    
+    <div class="ways-description">Thursdays: 7pm - 9:30pm</div>
+    
+    <div class="ways-description">Sundays: 9:30pm - 12:30pm</div>
+    
+    <div class="ways-description">Call 313.563.4457, email david_martinez@usc.salvationarmy.org, or&nbsp;<a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">click here</a>&nbsp;to sign up.</div>
+    
+    <div class="ways-we-help-button"><a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">Volunteer</a></div>
+    </div>
+    
+    <div class="ways-we-help"><img alt="kitchen-bb" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/1f7b8093-6a74-4788-b0e3-cf6875294a7f_reception.jpg" style="width: 100%" />
+    <div class="title-box">
+    <div class="ways-description-title">Receptionist</div>
+    </div>
+    
+    <div class="ways-description">We need someone to answer phones and greet clients.</div>
+    
+    <div class="ways-description">Dates: Mon. - Fri.</div>
+    
+    <div class="ways-description">Times: 3pm - 8pm</div>
+    
+    <div class="ways-description">Call 313.563.4457, email david_martinez@usc.salvationarmy.org, or&nbsp;<a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">click here</a>&nbsp;to sign up.</div>
+    
+    <div class="ways-we-help-button"><a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">Volunteer</a></div>
+    </div>
+    
+    <div class="ways-we-help"><img alt="bbtruck" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/0264d318-b765-4b15-b3f8-d6dcac83dc04_08-USW-Bestof2015.jpg" style="width: 100%" />
+    <div class="title-box">
+    <div class="ways-description-title">Food Pantry Assistant</div>
+    </div>
+    
+    <div class="ways-description">We need someone to help &#39;shop&#39; in our client choice pantry.</div>
+    
+    <div class="ways-description">Tuesdays: 9am - 3pm</div>
+    
+    <div class="ways-description">Fridays: 9am - 3pm</div>
+    
+    <div class="ways-description">Call 313.563.4457, email david_martinez@usc.salvationarmy.org, or&nbsp;<a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">click here</a>&nbsp;to sign up.</div>
+    
+    <div class="ways-we-help-button"><a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">Volunteer</a></div>
+    </div>
+    </div>
+    
+    <div class="volunteer-box">
+    <div style="font-size: 1.2em; font-weight: 600; margin: 10px 0px;">All volunteer placements require:</div>
+    
+    <div><span style="padding-left:2em">1.</span> Registration on our online database (<a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">click here</a>)</div>
+    
+    <div><span style="padding-left:2em">2.</span> Background check</div>
+    
+    <div><span style="padding-left:2em">3.</span> Safe from Harm training (3 hours)</div>
+    
+    <div style="font-size: 1.2em; font-weight: 600; margin: 10px 0px;">Community Service (court ordered):</div>
+    
+    <div><span style="padding-left:2em">We&nbsp;</span>only have community service opportunities in facilities management (building upkeep), Monday thru Friday from 8-3pm. If you need after hours or weekend, please contact The Salvation Army thrift store closest to you</div>
+    
+    <div style="font-size: 1.2em; font-weight: 600; margin: 10px 0px;">School-aged workers:</div>
+    
+    <div><span style="padding-left:2em">Due&nbsp;</span>to safety and oversite standards we require all underage volunteers to be accompanied by a parent or guardian.</div>
+    </div>
+    
+    <div class="box-sub-title"><a href="https://app.betterimpact.com/PublicOrganization/9e82e7ea-072f-4f28-b24a-80ba89358497/1" target="_blank">Click here</a> for all volunteer opportunities</div>
+    <!-- schedule -->
+    
+    <div id="schedule" style="background:linear-gradient(white, #999)">
+    <div id="blog">
+    <div class="row-cards">
+    <div class="shadow" id="events" style="background-color: white; padding: 20px;width: 100%">
+    <div class="box-title">Schedule</div>
+    
+    <div class="weekly-row" id="sched">
+    <div class="ways-description"><a href="https://calendar.google.com/calendar/embed?src=tsa.dhc%40gmail.com&amp;ctz=America%2FNew_York" target="_blank">Click here</a> to see our google calendar for a detailed week-to-week schedule.</div>
+    </div>
+    <iframe frameborder="0" height="600" id="google-schedule" scrolling="no" src="https://calendar.google.com/calendar/b/3/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=tsa.dhc%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0;margin: 0 auto; width: 100%" width="800"></iframe>
+    
+    <div class="box-title">Upcoming Events</div>
+    
+    <div class="sk-fb-event" data-embed-id="4597" style="width: 100%; margin: 0 auto">&nbsp;</div>
+    <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script></div>
+    </div>
+    </div>
+    </div>
+    <!-- church section -->
+    
+    <section id="church" style="width: 100%;padding: 40px 0; background: #999">
+    <div class="box-title">Church</div>
+    
+    <div class="ways-row">
+    <div class="ways-we-help" style="width: 50%; min-width: 275px; max-width: 800px;">
+    <div class="title-box">
+    <div class="ways-description-title">Sunday Schedule</div>
+    </div>
+    
+    <div class="ways-description">9:45am: Prayer Meeting</div>
+    
+    <div class="ways-description">9:45am: Sunday School (all ages welcome)</div>
+    
+    <div class="ways-description">11am: Holiness Worship Meeting</div>
+    
+    <div class="ways-description">See <span onclick="scrollToSection('events')" style="cursor: pointer; text-decoration: underline">google calendar</span> for more detailed week-to-week schedule.</div>
+    </div>
+    </div>
+    
+    <div class="box-sub-title">More Information:</div>
+    
+    <div class="ways-row">
+    <div class="document-container broad-shadow-black"><a href="https://drive.google.com/file/d/1OJcpQMailcLD3jvH28SlsXsiLb6UGib_/view?usp=sharing" target="_blank"><img alt="visletter" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/ed7deb4a-e1e2-42a7-94e8-eef637e9184e_Visitors+Letter.jpg" /> </a>
+    
+    <div class="document-hover-box"><a href="https://drive.google.com/file/d/1OJcpQMailcLD3jvH28SlsXsiLb6UGib_/view?usp=sharing" target="_blank">Visitors Letter</a></div>
+    <a href="https://drive.google.com/file/d/1OJcpQMailcLD3jvH28SlsXsiLb6UGib_/view?usp=sharing" target="_blank"> </a></div>
+    
+    <div class="document-container broad-shadow-black"><a href="https://drive.google.com/file/d/1Q-MM_yzF66W6BV4XkpysIq03wWisKZZz/view?usp=sharing" target="_blank"><img alt="visletter" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/ab236f88-4b01-419c-ae99-6281b283abe1_Welcome+Map_Page_1.jpg" /></a>
+    
+    <div class="document-hover-box"><a href="https://drive.google.com/file/d/1Q-MM_yzF66W6BV4XkpysIq03wWisKZZz/view?usp=sharing" target="_blank">Map</a></div>
+    </div>
+    
+    <div class="document-container broad-shadow-black"><a href="https://drive.google.com/file/d/1pQeei5oy0gqymgTMBS4bEr3sM6v0Qdn2/view?usp=sharing" target="_blank"><img alt="visletter" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/be346db7-071e-43ce-9505-e9a260fe590e_Happening+Soon.jpg" /></a>
+    
+    <div class="document-hover-box"><a href="https://drive.google.com/file/d/1pQeei5oy0gqymgTMBS4bEr3sM6v0Qdn2/view?usp=sharing" target="_blank">Happening Soon</a></div>
+    </div>
+    
+    <div class="document-container broad-shadow-black"><a href="https://drive.google.com/file/d/1QPxu5X13IbvSJrq4LPrILgTvpu9h866c/view?usp=sharing" target="_blank"><img alt="visletter" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/4116a7eb-e6e7-4c61-88c1-576bc4bd846a_Bible+Study_Page_1.jpg" /></a>
+    
+    <div class="document-hover-box"><a href="https://drive.google.com/file/d/1QPxu5X13IbvSJrq4LPrILgTvpu9h866c/view?usp=sharing" target="_blank">Bible Study</a></div>
+    </div>
+    
+    <div class="document-container broad-shadow-black"><a href="https://drive.google.com/file/d/1np7pgZuw2eMxZdcN8fOBT3ibMBWH9khJ/view?usp=sharing" target="_blank"><img alt="visletter" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/ea3ac7f4-7b5c-4d5b-b460-1c9e21121be0_Youth+Ministries.jpg" /></a>
+    
+    <div class="document-hover-box"><a href="https://drive.google.com/file/d/1np7pgZuw2eMxZdcN8fOBT3ibMBWH9khJ/view?usp=sharing" target="_blank">Youth Ministry</a></div>
+    </div>
+    
+    <div class="document-container broad-shadow-black"><a href="https://drive.google.com/file/d/1k4I6mQzDIXe0ciyuBp4zzf3fjzCaCp0X/view?usp=sharing" target="_blank"><img alt="visletter" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/60ccde1c-d6bf-4f24-84fb-c634686b2a5b_Music+Ministy.jpg" /></a>
+    
+    <div class="document-hover-box"><a href="https://drive.google.com/file/d/1k4I6mQzDIXe0ciyuBp4zzf3fjzCaCp0X/view?usp=sharing" target="_blank">Music Ministry</a></div>
+    </div>
+    
+    <div class="box-sub-title">Subscribe to our <a href="https://www.youtube.com/channel/UCVDMdMdnxo3DOdyluVyepkA/videos" target="_blank">Youtube channel</a> where we upload our Sunday sermons.</div>
+    
+    <div class="youtube-container shadow"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" id="youtube-desktop" src="https://www.youtube.com/embed/sUqeUMZg8qk" width="560"></iframe><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="170" id="youtube-mobile" src="https://www.youtube.com/embed/sUqeUMZg8qk" width="300"></iframe></div>
+    </div>
+    </section>
+    <!-- social services -->
+    
+    <section id="social-services" style="background: linear-gradient(#999, #b0b0b0); padding-bottom: 40px;">
+    <div class="box-title" style="margin-top: 0px;">Social Services&nbsp;</div>
+    
+    <div class="volunteer-box broad-shadow">
+    <div class="volunteer-box" style="padding: 20px 0 0 0; margin-bottom: 0;">
+    <div style="text-align: center">Areas we service: Dearborn, Dearborn Heights, Garden City, Livonia, Redford</div>
+    
+    <div style="font-size: 1.2em; font-weight: 600; margin: 10px 0px; text-align: center">All of our assistance programs require verification of income and household members.</div>
+    
+    <div style="text-align: center">Please be sure to ask the case manager what you will need to bring to your first appointment.</div>
+    
+    <div style="text-align: center;">Call 313-563-4457 if you dont find what you need below.</div>
+    </div>
+    
+    <div class="box-sub-title" style="margin-bottom: 0; padding-bottom: 0;">Services we offer:</div>
+    
+    <div class="ways-row" style="margin-top: 0; align-items: flex-start">
+    <div class="ssbox">
+    <div class="title-box">
+    <div class="ways-description-title">Food Pantry</div>
+    </div>
+    
+    <div class="ways-description">Available on:</div>
+    
+    <div class="ways-description">Tuesdays &amp; Fridays</div>
+    
+    <div class="ways-description">By appointment only.</div>
+    
+    <div class="ways-description">Contact Colleen Dahl at 313.563.4457 ext. 505 or email colleen_dahl@usc.salvationarmy.org to set up an appointment.</div>
+    </div>
+    
+    <div class="ssbox">
+    <div class="title-box">
+    <div class="ways-description-title">Rent Assistance</div>
+    </div>
+    
+    <div class="ways-description">By appointment only.</div>
+    
+    <div class="ways-description">Contact Colleen Dahl at 313.563.4457 ext. 505 or email colleen_dahl@usc.salvationarmy.org to set up an appointment.</div>
+    </div>
+    
+    <div class="ssbox">
+    <div class="title-box">
+    <div class="ways-description-title">Utility Assistance</div>
+    </div>
+    
+    <div class="ways-description">By appointment only.</div>
+    
+    <div class="ways-description">Contact Ticila Irby at 313.563.4457 ext. 506 or email ticila_irby@usc.salvationarmy.org to set up an appointment.</div>
+    </div>
+    
+    <div class="ssbox">
+    <div class="title-box">
+    <div class="ways-description-title">Narcotics Anonomous</div>
+    </div>
+    
+    <div class="ways-description">Wednesdays at 11am</div>
+    </div>
+    
+    <div class="ssbox">
+    <div class="title-box">
+    <div class="ways-description-title">Veteran&#39;s Resources</div>
+    </div>
+    
+    <div class="ways-description">A resource guide for veterans.</div>
+    
+    <div class="ways-description"><a href="https://www.ssrlawoffice.com/veterans-resources/" target="_blank">Click Here</a></div>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+    <div id="contact" style="background-color: #b0b0b0">
+    <div class="box-title">Contact</div>
+    
+    <div class="contact-row">
+    <div class="contact-box">
+    <div class="intro-box-title">Address:</div>
+    
+    <div class="list">
+    <div>26700 W Warren St</div>
+    
+    <div>Dearborn Heights, MI 48127</div>
+    </div>
+    
+    <div class="intro-box-title">Phone:</div>
+    
+    <div class="list">
+    <div>313-563-4457</div>
+    </div>
+    </div>
+    
+    <div class="map shadow"><iframe allowfullscreen="" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.0580186090583!2d-83.30516858380813!3d42.34128637918813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b4b23552ee8c1%3A0xbacfd1d2f56e4c67!2sThe+Salvation+Army!5e0!3m2!1sen!2sus!4v1520610379767" style="border:0; width: 100%; margin-bottom: -5px;" width="600"></iframe></div>
+    </div>
+    
+    <div id="blog">
+    <div class="box-title">Our Staff</div>
+    
+    <div class="row-cards">
+    <div class="blog-card">
+    <p><img alt="davidmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/decadd4f-2727-42ab-8e17-51160216cb62_davidmartinez.jpg" style="display: block; margin: auto; width: 100%; height: auto" /></p>
+    
+    <h2 style="text-align: center;">David Martinez</h2>
+    
+    <p>Officer</p>
+    
+    <p>313-563-4457 ext. 502</p>
+    
+    <p>David_Martinez@usc.salvationarmy.org</p>
+    </div>
+    
+    <div class="blog-card">
+    <p><img alt="Shannonmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/ff373dc3-9ef6-4826-9690-a87d500ecfa3_shannonmartinez.jpg" style="display: block; margin: auto; width: 100%; height: auto;" /></p>
+    
+    <h2 style="text-align: center;">Shannon Martinez</h2>
+    
+    <p>Officer</p>
+    
+    <p>313-563-4457 ext. 503</p>
+    
+    <p>Shannon_Martinez@usc.salvationarmy.org</p>
+    </div>
+    </div>
+    
+    <div class="staff-row">
+    <div class="staff-card"><img alt="davidmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/4a016e26-73bd-4b8d-bb1d-62f83772fed2_Judy.jpg" style="width: auto; height: 150px !important" />
+    <p style="font-weight: 600">Judy Bamford</p>
+    
+    <p>Business Manager</p>
+    
+    <p>313-563-4457 ext. 504</p>
+    
+    <p style="font-size: .6em">Judy_Bamford@usc.salvationarmy.org</p>
+    </div>
+    
+    <div class="staff-card"><img alt="davidmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/4e9d3a4d-4ad9-425f-a52c-fb614f03a1b8_colleen.jpg" style="width: auto; height: 150px !important" />
+    <p style="font-weight: 600">Colleen Dahl</p>
+    
+    <p>Dir. of Community Services</p>
+    
+    <p>313-563-4457 ext. 505</p>
+    
+    <p style="font-size: .6em">Colleen_Dahl@usc.salvationarmy.org</p>
+    </div>
+    
+    <div class="staff-card"><img alt="davidmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/b8c5463e-6b22-4809-905d-6ad2bedbec5e_beeill.jpg" style="width: auto; height: 150px !important" />
+    <p style="font-weight: 600">Billy Jolly</p>
+    
+    <p>Facilities Manager</p>
+    
+    <p>313-563-4457 ext. 500</p>
+    </div>
+    </div>
+    
+    <div class="staff-row">
+    <div class="staff-card"><img alt="davidmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/0264dec2-6bc3-4190-8b85-fd2ae759707b_DellaWeb.jpg" style="width: auto; height: 150px !important" />
+    <p style="font-weight: 600">Della Jolly</p>
+    
+    <p>Receptionist</p>
+    
+    <p>313-563-4457 ext. 500</p>
+    
+    <p style="font-size: .6em">Della_Jolly@usc.salvationarmy.org</p>
+    </div>
+    
+    <div class="staff-card"><img alt="davidmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/99324907-0726-4342-80a5-a24ecf0a72d6_TicilaWeb.jpg" style="width: auto; height: 150px !important" />
+    <p style="font-weight: 600">Ticila Irby</p>
+    
+    <p>Emergency Assistance Worker</p>
+    
+    <p>313-563-4457 ext. 506</p>
+    
+    <p style="font-size: .6em">Ticilia_Irby@usc.salvationarmy.org</p>
+    </div>
+    
+    <div class="staff-card"><img alt="davidmartinez" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/ba690a57-fdac-4efc-bc1b-0c246c186a5c_Amanda-May-McKee.jpg" style="width: auto; height: 150px !important" />
+    <p style="font-weight: 600">Amanda Mckee</p>
+    
+    <p>Dir. of Community Center Ministries</p>
+    
+    <p>313-563-4457 ext. 507</p>
+    
+    <p style="font-size: .6em">Amanda_McKee@usc.salvationarmy.org</p>
+    </div>
+    </div>
+    </div>
+    
+  <!-- additional programs / maybe church section -->
+    
+    <section class="ways-we-help-section" id="emi-programs">
+    <div class="box-title">Eastern Michigan Regional Programs</div>
+    
+    <div class="ways-row">
+    <div class="image-bg-box broad-shadow-black" id="pathway">
+    <div class="small-overlay-text">Pathway Of Hope</div>
+    
+    <div class="overlay-box"><a href="http://salmich.org/emi/Pathwayofhope" target="_blank">Learn More</a></div>
+    </div>
+    
+    <div class="image-bg-box broad-shadow-black" id="socialservices">
+    <div class="small-overlay-text">Social Services</div>
+    
+    <div class="overlay-box"><a href="http://www.salmich.org/emi/SocialServices" target="_blank">Learn More</a></div>
+    </div>
+    
+    <div class="image-bg-box broad-shadow-black" id="babc">
+    <div class="small-overlay-text">Bed and Bread Club</div>
+    
+    <div class="overlay-box"><a href="http://salmich.org/emi/bedandbread" target="_blank">Learn More</a></div>
+    </div>
+    
+    <div class="image-bg-box broad-shadow-black" id="wblac">
+    <div class="small-overlay-text">Legal Aid</div>
+    
+    <div class="overlay-box"><a href="http://salmich.org/emi/williamboothlegalaidclinic" target="_blank">Learn More</a></div>
+    </div>
+    
+    <div class="image-bg-box broad-shadow-black" id="harbor">
+    <div class="small-overlay-text">Harbor Light</div>
+    
+    <div class="overlay-box"><a href="http://salmich.org/emi/hls" target="_blank">Learn More</a></div>
+    </div>
+    
+    <div class="image-bg-box broad-shadow-black" id="arc">
+    <div class="small-overlay-text">Adult Rehab Centers</div>
+    
+    <div class="overlay-box"><a href="http://semichigan.satruck.org/" target="_blank">Learn More</a></div>
+    </div>
+    </div>
+    </section>
+    
+    <section class="connect-stripe"><!--SOCIAL BUTTONS-->
+    <div style="width: 50%">
+    <div class="text-center">
+    <h3 style="text-align: center;"><span style="color:#FE0023;">Connect With Us</span></h3>
+    
+    <ul class="social">
+        <li class="facebook" style="text-align: center;"><a href="https://www.facebook.com/dearbornheightscitadel/" target="_blank">Facebook</a></li>
+        <li class="youtube" style="text-align: center;"><a href="https://www.youtube.com/channel/UCVDMdMdnxo3DOdyluVyepkA/videos" target="_blank">YouTube</a></li>
+    </ul>
+    </div>
+    </div>
+    </section>
+    
+    <footer id="footer">
+    <div class="footer-logo" style="display: flex; flex-direction: column; align-items: center"><img alt="logo" src="http://westernusa.salvationarmy.org/templates/symphony/static_resources/images/global/shield.svg" style="height: 100px; width: 100px; margin: 30px" />
+    <div style="font-size: 18px; color: grey; text-align: center">&copy; 2018 The Salvation Army</div>
+    
+    <div style="height:1px;width: 80%; margin: 20px auto; background-color:grey">&nbsp;</div>
+    
+    <div class="footer-links">
+    <div class="link-box">
+    <div class="footer-link">The Salvation Army</div>
+    
+    <div class="footer-link">26700 W Warren St</div>
+    
+    <div class="footer-link">Dearborn Heights, MI 48127</div>
+    
+    <div class="footer-link">313-563-4457</div>
+    </div>
+    
+    <div class="link-box">
+    <div class="footer-link"><a href="http://salmich.org/emi/WhatWeBelieve" target="_blank">What We Believe</a></div>
+    
+    <div class="footer-link"><a href="http://salmich.org/emi/leadership" target="_blank">Leadership</a></div>
+    
+    <div class="footer-link"><a href="http://salmich.org/emi/whatisthesalvationarmy" target="_blank">What is the Salvation Army?</a></div>
+    
+    <div class="footer-link"><a href="http://centralusa.salvationarmy.org/usc/employment?_ga=2.96302364.1096425244.1513875493-160856993.1512676693&amp;cm_mc_uid=95353974543715126766933&amp;cm_mc_sid_51410000=1513950982" target="_blank">Employment Opportunities</a></div>
+    
+    <div class="footer-link"><a href="http://centralusa.salvationarmy.org/emi/howdoi?_ga=2.96302364.1096425244.1513875493-160856993.1512676693&amp;cm_mc_uid=95353974543715126766933&amp;cm_mc_sid_51410000=1513950982" target="_blank">FAQ</a></div>
+    </div>
+    
+    <div class="link-box">
+    <div class="footer-link"><a href="http://centralusa.salvationarmy.org/emi/locations?_ga=2.262149132.1096425244.1513875493-160856993.1512676693&amp;cm_mc_uid=95353974543715126766933&amp;cm_mc_sid_51410000=1513950982" target="_blank">Locations</a></div>
+    
+    <div class="footer-link"><a href="http://centralusa.salvationarmy.org/emi/CorpsCommunityCenters?_ga=2.262149132.1096425244.1513875493-160856993.1512676693&amp;cm_mc_uid=95353974543715126766933&amp;cm_mc_sid_51410000=1513950982" target="_blank">Community Centers</a></div>
+    
+    <div class="footer-link"><a href="http://centralusa.salvationarmy.org/emi/SocialServices?_ga=2.262149132.1096425244.1513875493-160856993.1512676693&amp;cm_mc_uid=95353974543715126766933&amp;cm_mc_sid_51410000=1513950982" target="_blank">Social Service Units</a></div>
+    
+    <div class="footer-link"><a href="http://centralusa.salvationarmy.org/emi/FamilyStores?_ga=2.262149132.1096425244.1513875493-160856993.1512676693&amp;cm_mc_uid=95353974543715126766933&amp;cm_mc_sid_51410000=1513950982" target="_blank">Family Stores</a></div>
+    
+    <div class="footer-link"><a href="http://echogrove.org/" target="_blank">Echo Grove Camp</a></div>
+    </div>
+    </div>
+    </div>
+    </footer>
+    </div>
+    </div>
+    </section>
+    </div>
+    </section>
+    
+
+<script src="./index.js"></script>
+<script src="https://use.fontawesome.com/831f1b5d88.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+</html>
