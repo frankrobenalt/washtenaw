@@ -9,6 +9,16 @@ body {
     /* font-family: 'Tinos', serif; */
     /* font-family: 'Playfair Display SC', serif; */
 }
+
+.corps-section {
+    background-color: white;
+    width: 80%;
+    max-width: 1425px;
+    min-width: 280px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
 #jump {
     color: white; 
     font-size: 2em;
@@ -27,6 +37,10 @@ body {
     width: 40% !important;
     margin: 20px;
     min-width: 275px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #6e6e6e;
+    -moz-box-shadow: 0px 0px 20px #6e6e6e;
+    -webkit-box-shadow: 0px 0px 20px #6e6e6e;    
   }
   .staff-row {
    width: 90%;
@@ -43,7 +57,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 300px;
     width: 250px;
     margin: 10px 5px;
           box-shadow: 0px 0px 5px black; 
@@ -65,6 +78,7 @@ body {
   }
   .contact-row {
     width: 100%;
+    margin: 40px auto;
     display: flex;
     Justify-content: center;
     flex-wrap: wrap;
@@ -74,11 +88,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+  }
+  .contact-box div:nth-of-type(2n) {
+      border: none;
+  }
+  .contact-box div:first-of-type {
+      width: 100%;
+  }
+  .ul {
+    text-decoration: underline;
+    padding-bottom: 5px;
   }
   .map {
     width: 60%; 
     min-width: 380px;
+    max-width: 800px;
   }
   .list div {
     font-size: 20px;
@@ -88,7 +112,7 @@ body {
   }
   .list {
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 20px auto;
   }
   .intro-box-title {
    font-size: 30px;
@@ -339,8 +363,8 @@ body {
   #pathway {
     background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/d13397d6-91fb-46b5-b673-32da409acddb_rl_ph005.jpg');
   }
-  #socialservices {
-    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/02acb4eb-fe61-4b80-a649-66822fbfd6dc_1Akron_Dad_and_son_in_front_of_Salvation_Army_Shield_2.png'); 
+  #echo {
+    background-image: url('https://photos-1.dropbox.com/t/2/AABFc3rySme7JEBS6GsDLlvvxff1xjQv1JWuLAp37vnO7Q/12/76647191/jpeg/32x32/1/_/1/2/classy__0002_TSAO_background.jpg/EJn8uTsYocoFIAIoAg/d-oCMky_7LPnl32ptAFU140AmKbeWaTzEH_-jHV3CAQ?size=2048x1536&size_mode=3'); 
   }
   #babc {
     background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/eac919ab-ed96-48a8-9e42-dd5f87530570_DSC_1029wbw.jpg'); 
@@ -425,6 +449,7 @@ body {
     background-position: center center;
     background-color: black;
     transition: 12000ms transform;
+    transform: scale(1.1);
   }
   
   #det {
@@ -508,7 +533,7 @@ body {
     line-height: 125%;
   }
   .ways-description {
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px 20px;
     text-align: center;
   }
@@ -541,7 +566,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 /*    background-color: rgba(77, 77, 77, 0.397); */
     padding:10px 0;
     position: absolute;
@@ -825,6 +850,10 @@ border-bottom: 2px solid red;
     padding-top: 30%;
     font-size: 15px;
   }
+  .link-box {
+      padding: 2px;
+  }
+
   #fb {
    display: none !important; 
   }
@@ -1096,6 +1125,9 @@ border-bottom: 2px solid red;
         padding: 20px 15px;
         text-align: center;
       }
+      #footer {
+          padding: 0 0 20px;
+      }
     }
   .EDSalert {
     width: 89%;
@@ -1126,6 +1158,7 @@ border-bottom: 2px solid red;
     background-size: cover;
     height: 515px;
   }
+
 }
 #tsablack { background-color: #000000}
 #bellringer { background-color: #322831}
@@ -1185,6 +1218,9 @@ letter-spacing: .01em;
       #locations, #donate, #locations-sticky, #donate-sticky {
         display: none; 
       }
+      .contact-box div:first-of-type {
+        width: 90%;
+    }
     }
   @media (max-width: 400px) {
     #everything-under-top {
