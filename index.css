@@ -6,8 +6,94 @@ body {
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Cinzel', serif;
     font-weight: 600;
+    overflow-x: hidden;
     /* font-family: 'Tinos', serif; */
     /* font-family: 'Playfair Display SC', serif; */
+}
+
+/* iframe modal ----------------------------------------------- */
+
+.close-button-wrapper {
+    /* position: absolute; */
+    /* top: 20px; */
+    /* right: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60vw;
+    margin-bottom: 20px;
+    transform: translate(-50px,100px);
+    transition: 500ms all;
+    opacity: 0;
+ }
+
+ .close-button {
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    -webkit-box-shadow: 0px 0px 10px black;
+    -moz-box-shadow: 0px 0px 10px black;
+    padding: 7.5px 15px;
+    border-radius: 50%;
+    color: black;
+    font-weight: 100;
+    font-family: helvetica neue, sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .shadow-modal {
+    box-shadow: 0px 0px 10px black; 
+    -webkit-box-shadow: 0px 0px 10px black; 
+    -moz-box-shadow: 0px 0px 10px black; 
+  }
+
+  .outer-modal {
+    font-family: 'trajan-pro-3';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 5678;
+  }
+  .modal {
+    position: relative;
+    width: 1049px;
+    min-width: 275px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 500ms all;
+    opacity: 0;
+    transform: translateY(100px);    
+  }
+
+.fixed-background {
+    height: 600px;
+    width: 100vw;
+    background: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/bb69ef3d-1ab6-43a8-a202-c2ad69fa742f_homelesshug.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.fixed-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.69);
+    height: 100%;
+    width: 100%;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.fixed-overlay img, .fixed-overlay div {
+    cursor: pointer;
 }
 
 .corps-section {
@@ -85,6 +171,7 @@ body {
     
   }
   .contact-box {
+      width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,15 +179,16 @@ body {
   .contact-box div:nth-of-type(2n) {
       border: none;
   }
-  .contact-box div:first-of-type {
-      width: 100%;
-  }
   .ul {
     text-decoration: underline;
     padding-bottom: 5px;
   }
   .map {
-    width: 60%; 
+    width: 50%;
+    height: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    margin: 0 25px; 
     min-width: 380px;
     max-width: 800px;
   }
