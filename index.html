@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Salvation Army Washtenaw County - Ann Arbor and Ypsilanti</title>
     <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">            
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Playfair+Display+SC|Tinos" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Playfair+Display+SC|Tinos" rel="stylesheet">  
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -29,6 +29,8 @@
     <div class="flex sticky-nav-link" id="donate-sticky" onclick="scrollToSection('ypsi')"><i aria-hidden="true" class="fas fa-hospital" style="margin-right: 5px">&nbsp;</i>Ypsilanti</div>
     
     <div class="sticky-nav-link" id="locations-sticky" onclick="scrollToSection('social-services')"><i aria-hidden="true" class="fas fa-users" style="margin-right:5px">&nbsp;</i>Social Services</div>
+
+    <div class="sticky-nav-link" id="locations-sticky" onclick="scrollToSection('thrift')"><i aria-hidden="true" class="fas fa-shopping-cart" style="margin-right:5px">&nbsp;</i>Thrift Store</div>
     
     <div class="sticky-nav-link" id="locations-sticky" onclick="scrollToSection('contact')"><i aria-hidden="true" class="fas fa-phone" style="margin-right:5px">&nbsp;</i>Contact</div>
     
@@ -195,7 +197,7 @@
                 <div class="ways-description"><a href="https://calendar.google.com/calendar/embed?src=tsa.dhc%40gmail.com&amp;ctz=America%2FNew_York" target="_blank">Click here</a> to see our google calendar for a detailed week-to-week schedule.</div>
                 </div>
                 <iframe frameborder="0" height="600" id="google-schedule" scrolling="no" src="https://calendar.google.com/calendar/b/3/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=tsa.dhc%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0;margin: 0 auto; width: 100%" width="800"></iframe>            
-        <div class="box-sub-title">Social Services</div>
+        <div class="box-sub-title">Programs</div>
     </div>
 
     <!-- ypsi -->
@@ -208,7 +210,7 @@
                 </div>
                 <iframe frameborder="0" height="600" id="google-schedule" scrolling="no" src="https://calendar.google.com/calendar/b/3/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=tsa.dhc%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0;margin: 0 auto; width: 100%" width="800"></iframe>
                 
-        <div class="box-sub-title">Social Services</div>
+        <div class="box-sub-title">Programs</div>
 
     </div>
 
@@ -303,7 +305,7 @@
         
         <div style="text-align: center">Please be sure to ask the case manager what you will need to bring to your first appointment.</div>
         
-        <div style="text-align: center;">Call 734-668-8353 if you dont find what you need below.</div>
+        <div class="ssbox" style="text-align: center;margin: 20px auto; width: 100%; box-shadow: none; border: 2px solid black">Call 734-668-8353 if you dont find what you need below.</div>
     </div>
 </div>
     
@@ -317,27 +319,38 @@
         <div class="title-box">
             <div class="ways-description-title">Food Pantry</div>
         </div>
-    
-    <div class="ways-description">Available on:</div>
-    
-    <div class="ways-description">Tuesdays &amp; Fridays</div>
-    
+        <div style="display: flex">
+                <div style="width: 50%">
+                    <div class="ways-description" style="border-bottom: 1px solid black; padding-bottom: 3px;">Ann Arbor</div>
+                    <div class="ways-description">Tuesday: 9:30am - 11:30am, 1pm - 3pm</div>
+                    <div class="ways-description">Thursday: 9:30am - 11:30am, 1pm - 3pm</div>
+                </div>
+                <div style="width: 50%">            
+                    <div class="ways-description" style="border-bottom: 1px solid black; padding-bottom: 3px;">Ypsilanti</div>
+                    <div class="ways-description">Tuesday: 1pm - 3pm</div>
+                    <div class="ways-description">(non-perishables)</div>
+                    <div class="ways-description">Thursday: 2pm - 3pm</div>
+                    <div class="ways-description">(produce and bread)</div>
+                </div>
+            </div>
     <div class="ways-description">By appointment only.</div>
     
-    <div class="ways-description">Contact 734-668-8353 or email @usc.salvationarmy.org to set up an appointment.</div>
+    <div class="ways-description">Contact 734-668-8353 to set up an appointment.</div>
     </div>
     
     <div class="ssbox">
             <div class="title-box">
-                    <i class="fas fa-money-bill-alt fa-4x">&nbsp;</i>
+                    <i class="fas fa-users fa-4x">&nbsp;</i>
                 </div>    
     <div class="title-box">
-    <div class="ways-description-title">Rent Assistance</div>
+    <div class="ways-description-title">Pathway of Hope</div>
     </div>
     
+    <div class="ways-description">Are you concerned about the basics that you need for you and your family?</div>
+    <div class="ways-description"> You can take the first step today by joining the Pathway of Hope to help you navigate the challenges to a better future. To get there, a caseworker will work with you to design a plan around your individual goals, needs and strengths.</div>
     <div class="ways-description">By appointment only.</div>
     
-    <div class="ways-description">Contact 734-668-8353 or email @usc.salvationarmy.org to set up an appointment.</div>
+    <div class="ways-description">Contact 734-668-8353 to set up an appointment.</div>
     </div>
     
     <div class="ssbox">
@@ -348,67 +361,72 @@
             <div class="ways-description-title">Utility Assistance</div>
         </div>
     
+    <div class="ways-description">Each location has a social worker on site for assistance with utilities and other needs as funds are available.</div>
+
     <div class="ways-description">By appointment only.</div>
     
-    <div class="ways-description">Contact 734-668-8353 or email @usc.salvationarmy.org to set up an appointment.</div>
+    <div class="ways-description">Contact 734-668-8353 to set up an appointment.</div>
     </div>
-    
-    <div class="ssbox">
-        <div class="title-box">
-                <i class="fas fa-users fa-4x">&nbsp;</i>
-        </div> 
-        <div class="title-box">
-            <div class="ways-description-title">Staple's Family Center</div>
+    </div>
+    <div class="box-sub-title">Housing</div>
+    <div class="ways-row">
+        <div class="ssbox" style="width: 50% !important">
+            <div class="title-box">
+                <i class="fas fa-home fa-4x">&nbsp;</i>
+            </div> 
+            <div class="title-box">
+                <div class="ways-description-title">Housing Access of Washtenaw County</div>
+            </div>
+            
+            <div class="ways-description">If you are homeless or experiencing a housing crisis, please call:</div>
+            <div class="Ways-description" style="font-size: 1.2em; color: red;">(734) 961-1999</div>
+            <div class="ways-description ul">Call Center Hours:</div>
+            <div class="ways-description">Monday through Friday: 8:30am - 5pm</div>
+            <div class="ways-description ul">Walk-In Hours:</div>
+            <div style="display: flex">
+                <div style="width: 50%">
+                    <div class="ways-description">Tuesday: 9am - 12pm</div>
+                    <div class="ways-description">9 S Park St</div>
+                    <div class="ways-description">Ypsilanti, MI 48197</div>
+                </div>
+                <div style="width: 50%">            
+                    <div class="ways-description">Thursday: 1pm - 4pm</div>
+                    <div class="ways-description">100 Arbana Dr</div>
+                    <div class="ways-description">Ann Arbor, MI 48103</div>
+                </div>
+            </div>
+            <div class="ways-description">Website: <a href="http://www.housingaccess.net/" target="_blank">Click Here</a></div>
+            <div class="ways-description">Outside of Washtenaw County?</div>
+            <div class="ways-description"><a href="http://www.michigan.gov/documents/mshda/HARAList_396245_7.pdf" target="_blank">Click Here</a> for a list of resources</div>
         </div>
-    
-    <div class="ways-description">Emergency shelter</div>
-    <div class="ways-description">3660 Packard</div>
-    <div class="ways-description">Ann Arbor, MI</div>
-    <div class="ways-description">Phone number: 734-761-7750</div>
-
     </div>
-
-    <div class="ssbox">
+    <div class="ways-row">
+        <div class="ssbox">
             <div class="title-box">
                     <i class="fas fa-home fa-4x">&nbsp;</i>
             </div> 
-    <div class="title-box">
-    <div class="ways-description-title">Housing Access of Washtenaw County</div>
-    </div>
+            <div class="title-box">
+                <div class="ways-description-title">Staple's Family Center</div>
+            </div>
+        
+        <div class="ways-description">An emergency shelter for families in need of housing assistance.</div>
+        <div class="ways-description">The program is a part of Housing Access of Washtenaw County. Contact:</div>
+        <div class="Ways-description" style="font-size: 1.2em; color: red;">(734) 961-1999</div>                    
+        <div class="ways-description">See above for more information.</div>
     
-    <div class="ways-description">If you are homeless or experiencing a housing crisis, please call:</div>
-    <div class="Ways-description" style="font-size: 1.2em; color: red;">(734) 961-1999</div>
-    <div class="ways-description ul">Call Center Hours:</div>
-    <div class="ways-description">Monday through Friday: 8:30am - 5pm</div>
-    <div class="ways-description ul">Walk-In Hours:</div>
-    <div style="display: flex">
-    <div style="width: 50%">
-    <div class="ways-description">Tuesday: 9am - 12pm</div>
-    <div class="ways-description">9 S Park St</div>
-    <div class="ways-description">Ypsilanti, MI 48197</div>
-    </div>
-    <div style="width: 50%">            
-    <div class="ways-description">Thursday: 1pm - 4pm</div>
-    <div class="ways-description">100 Arbana Dr</div>
-    <div class="ways-description">Ann Arbor, MI 48103</div>
-    </div>
-    </div>
-    <div class="ways-description">Website: <a href="http://www.housingaccess.net/" target="_blank">Click Here</a></div>
-    <div class="ways-description">Outside of Washtenaw County?</div>
-    <div class="ways-description"><a href="http://www.michigan.gov/documents/mshda/HARAList_396245_7.pdf" target="_blank">Click Here</a> for a list of resources</div>
-    </div>
-    
-    <div class="ssbox">
+        </div>
+
+        <div class="ssbox">
         <div class="title-box">
-            <i class="fas fa-flag fa-4x">&nbsp;</i>
+            <i class="fas fa-home fa-4x">&nbsp;</i>
         </div> 
         <div class="title-box">
-            <div class="ways-description-title">Veteran&#39;s Haven of Hope</div>
+            <div class="ways-description-title">Veteran&#39;s Haven of Hope House</div>
         </div>
         <div class="ways-description">Assistance and transitional housing for veterans.</div>
-        <div class="ways-description">809 Henry St</div>
-        <div class="ways-description">Ann Arbor, MI</div>
-    
+        <div class="ways-description">If you are a vet experiencing in need of housing assistance, contact Housing Access of Washtenaw County at:</div>
+        <div class="Ways-description" style="font-size: 1.2em; color: red;">(734) 961-1999</div>            
+        <div class="ways-description">See above for more information.</div>
     </div>
     </div>
     </section>
@@ -419,26 +437,32 @@
     <div class="contact-row">
     <div class="contact-box">
     <div class="intro-box-title">Ann Arbor Corps Community Center</div>
+    <div class="list">
+        <div>We do not have the capacity to accept item donations. Please give all physical donations to our thrift store, or <a href="https://satruck.org/" target="_blank">schedule a free pick-up.</a></div>
+    </div>
     <div class="intro-box-title">Address:</div>
     
     <div class="list">
-    <div>100 Arbana Dr.</div>
-    
-    <div>Ann Arbor, MI 48103</div>
+        <div>100 Arbana Dr.</div>
+        
+        <div>Ann Arbor, MI 48103</div>
     </div>
     
     <div class="intro-box-title">Phone:</div>
     
     <div class="list">
-    <div>734-668-8353</div>
+        <div>734-668-8353</div>
     </div>
-    </div>
-    <div class="map shadow"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.8253984533485!2d-83.7640132839311!3d42.28225034800337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae200d48a42b%3A0x898ffc45e8d822f8!2s100+Arbana+Dr%2C+Ann+Arbor%2C+MI+48103!5e0!3m2!1sen!2sus!4v1522949085832" width="600" height="450" frameborder="0" style="border:0; width: 100%; margin-bottom: -5px;" allowfullscreen></iframe></div>
-    </div>
+</div>
+<div class="map shadow"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.8253984533485!2d-83.7640132839311!3d42.28225034800337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae200d48a42b%3A0x898ffc45e8d822f8!2s100+Arbana+Dr%2C+Ann+Arbor%2C+MI+48103!5e0!3m2!1sen!2sus!4v1522949085832" width="600" height="450" frameborder="0" style="border:0; width: 100%; margin-bottom: -5px;" allowfullscreen></iframe></div>
+</div>
 
-    <div class="contact-row" style="flex-direction: row-reverse">
+<div class="contact-row" style="flex-direction: row-reverse">
     <div class="contact-box">
-    <div class="intro-box-title">Ypsilanti Corps Community Center</div>
+        <div class="intro-box-title">Ypsilanti Corps Community Center</div>
+            <div class="list">
+                <div>We do not have the capacity to accept item donations. Please give all physical donations to our thrift store, or <a href="https://satruck.org/" target="_blank">schedule a free pick-up.</a></div>
+            </div>
     <div class="intro-box-title">Address:</div>
     
     <div class="list">
@@ -450,7 +474,7 @@
     <div class="intro-box-title">Phone:</div>
     
     <div class="list">
-    <div>734-482-4700</div>
+    <div id="thrift">734-482-4700</div>
     </div>
     </div>
     <div class="map shadow"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.785509178316!2d-83.60805298393183!3d42.240395150641575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883ca83c7f536f77%3A0x878099f7f10a7a83!2s9+S+Park+St%2C+Ypsilanti%2C+MI+48198!5e0!3m2!1sen!2sus!4v1522949182219" width="600" height="450" frameborder="0" style="border:0; width: 100%; margin-bottom: -5px;" allowfullscreen></iframe></div>
@@ -459,6 +483,14 @@
     <div class="contact-row">
     <div class="contact-box">
     <div class="intro-box-title">Thrift Store / Item Drop-off</div>
+    <div class="list">
+        <div>Drop off physical donations, or <a href="https://satruck.org/" target="_blank">schedule a free pick-up.</a></div>
+    </div>
+    <div class="intro-box-title" style="border: none;">Hours:</div>
+    <div class="list">
+        <div>Mon - Sat: 9am - 10pm</div>
+        <div>Sunday: closed </div>
+    </div>
     <div class="intro-box-title">Address:</div>
     
     <div class="list">
@@ -467,7 +499,7 @@
     <div>Ann Arbor, MI 48104</div>
     </div>
     
-    <div class="intro-box-title">Phone:</div>
+    <div class="intro-box-title" style="border: none">Phone:</div>
     
     <div class="list">
     <div>734-332-3474</div>
@@ -566,14 +598,19 @@
     </div>
     </div>
     
-  <!-- additional programs / maybe church section -->
-      
-  <section class="fixed-background" id="fixed">
-        <div class="fixed-overlay">
-            <img onclick="video.appendVid('pathway')" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/aa2f0d9c-4ef3-481a-b9d1-efbcb46f4933_playbutton-noshadow.png" alt="play-button" />
-            <div onclick="video.appendVid('pathway')">Watch Video</div>
-        </div>
-    </section>  
+    <!-- employment  -->
+    <div class="box-title">Employment Opportunities</div>
+
+    
+  <!-- additional programs / maybe church section --> 
+      <!-- 
+          <section class="fixed-background" id="fixed">
+              <div class="fixed-overlay">
+                  <img onclick="video.appendVid('pathway')" src="https://s3.amazonaws.com/usc-cache.salvationarmy.org/aa2f0d9c-4ef3-481a-b9d1-efbcb46f4933_playbutton-noshadow.png" alt="play-button" />
+                  <div onclick="video.appendVid('pathway')">Watch Video</div>
+                </div>
+            </section> 
+        -->
 
     <section class="ways-we-help-section" id="emi-programs">
     <div class="box-title">Eastern Michigan Regional Programs</div>
@@ -617,7 +654,7 @@
     </div>
     </section>
     
-    <section class="connect-stripe"><!--SOCIAL BUTTONS-->
+    <!-- <section class="connect-stripe">
     <div style="width: 50%">
     <div class="text-center">
     <h3 style="text-align: center;"><span style="color:#FE0023;">Connect With Us</span></h3>
@@ -628,7 +665,7 @@
     </ul>
     </div>
     </div>
-    </section>
+    </section> -->
     
     <footer id="footer">
     <div class="footer-logo" style="display: flex; flex-direction: column; align-items: center"><img alt="logo" src="http://westernusa.salvationarmy.org/templates/symphony/static_resources/images/global/shield.svg" style="height: 100px; width: 100px; margin: 30px" />

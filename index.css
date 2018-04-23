@@ -120,13 +120,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40% !important;
     margin: 20px;
+    width: 40% !important;
     min-width: 275px;
     padding: 20px;
-    box-shadow: 0px 0px 20px #6e6e6e;
-    -moz-box-shadow: 0px 0px 20px #6e6e6e;
-    -webkit-box-shadow: 0px 0px 20px #6e6e6e;    
+    box-shadow: 0px 0px 5px #6e6e6e;
+    -moz-box-shadow: 0px 0px 5px #6e6e6e;
+    -webkit-box-shadow: 0px 0px 5px #6e6e6e;    
   }
   .staff-row {
    width: 90%;
@@ -176,8 +176,9 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-  .contact-box div:nth-of-type(2n) {
+  .contact-box div:nth-of-type(3n + 2), .contact-box div:nth-of-type(3n), .contact-box div:nth-of-type(2n) {
       border: none;
+      margin: 0 auto;
   }
   .ul {
     text-decoration: underline;
@@ -194,13 +195,12 @@ body {
   }
   .list div {
     font-size: 20px;
-    margin: 10px auto; 
     color: black;
     text-align: center;
   }
   .list {
     width: 100%;
-    margin: 20px auto;
+    margin: 10px auto;
   }
   .intro-box-title {
    font-size: 30px;
@@ -210,7 +210,6 @@ body {
     margin: 10px auto;
     padding: 10px;
     border: 2px solid black;
-    width: 90%;
     max-width: 1175px;
   }
   .intro {
@@ -362,8 +361,7 @@ body {
     }
   }
   #emi-programs {
-   background: linear-gradient(#b0b0b0, white);
-    padding-top: 40px;
+    padding: 40px 0;
   }
   .volunteer-box {
     display: flex;
@@ -804,7 +802,7 @@ border-bottom: 2px solid red;
   white-space: nowrap;
 }
   .nav-link, .sticky-nav-link {
-    margin-left: 40px; 
+    margin-left: 20px; 
   }
 .sticky-nav-link, .sticky-nav-link a {
     cursor: pointer;
