@@ -167,6 +167,7 @@ body {
     margin: 40px auto;
     display: flex;
     Justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     
   }
@@ -369,7 +370,7 @@ body {
     flex-direction: column;
     background-color: white;
     padding: 20px;
-    max-width: 75%;
+    max-width: 85%;
     margin: 20px auto;
   }
   .volunteer-box div {
@@ -475,6 +476,7 @@ body {
    #footer {
      position: fixed;
      bottom: 0;
+     left: 0;
      z-index: -101;
     background-color: #332E27;
     width: 100vw;
@@ -523,13 +525,14 @@ body {
       top: 0;
       /* left:50%; */
       min-width: 100vw; 
-      min-height: 80%;
+      min-height: 100%;
       width: 100vw !important;
-      height: 80%;
+      height: 100%;
       overflow: hidden;
       /* transform: translate(-50%, -50%); */
       z-index: -100;
     background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/73a8dbd6-cf0e-4a28-abd8-506abf3fe246_Home-Page-background-photo.jpg');
+    background-image: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/9ee89cfc-02e2-49ae-8e23-8b15276bf9c0_RedKettleReason2015_SnowfallKids.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -537,6 +540,25 @@ body {
     transition: 12000ms transform;
     transform: scale(1.1);
   }
+  
+  .overlay {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(238, 58, 67, 0.41)); */
+    background-color: rgba(0,0,0,.3)
+  }
+    
+  #everything-under-top {
+    position: absolute;
+    top:100%;
+    width: 100%;
+}
   
   #det {
           position: fixed;
@@ -549,8 +571,8 @@ body {
       overflow: hidden;
       /* transform: translate(-50%, -50%); */
       z-index: -102;
-    background-color: black;
-  }
+      background-color: black;
+    }
 
    .title-box {
    display: flex;
@@ -641,12 +663,6 @@ body {
     text-decoration: none;
   }
   
-  #everything-under-top {
-    position: absolute;
-    top:80%;
-    width: 100%;
-}
-  
   .general-header {
     z-index: 2;
     display: flex;
@@ -686,19 +702,6 @@ border-bottom: 2px solid red;
     font-size: 25px; 
     color: white;
       }
-  
-  .overlay {
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 80%;
-    z-index: -99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(238, 58, 67, 0.41)); */
-    background-color: rgba(0,0,0,.3)
-}
 
 #overlay {
     height: 30% !important;
