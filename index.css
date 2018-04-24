@@ -27,7 +27,7 @@ body {
     opacity: 0;
  }
 
- .close-button {
+ /* .close-button {
     background-color: white;
     box-shadow: 0px 0px 10px black;
     -webkit-box-shadow: 0px 0px 10px black;
@@ -39,7 +39,7 @@ body {
     font-family: helvetica neue, sans-serif;
     font-size: 2em;
     cursor: pointer;
-  }
+  } */
   .shadow-modal {
     box-shadow: 0px 0px 10px black; 
     -webkit-box-shadow: 0px 0px 10px black; 
@@ -115,6 +115,15 @@ body {
     0% { transform: translateY(10px) }
     50% { transform: translateY(0px) }
     100% { transform: translateY(10px) }
+  }
+  .close-button {
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 100;
+    font-family: helvetica neue, sans-serif;
+    font-size: 2em;
+    cursor: pointer;
   }
   .ssbox {
     display: flex;
@@ -537,7 +546,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-color: black;
-    transition: 12000ms transform;
+    transition: 15000ms transform;
     transform: scale(1.1);
   }
   
@@ -898,158 +907,12 @@ border-bottom: 2px solid red;
     }
     
   }
-  
-/* General */
-.clear {
-  clear: both;
-}
-/* Banner */
-.banner {
-  border-bottom: 10px solid #4b4b4b;
-  display: inline-block;
-  width: 100%;
-}
-/* Join */
-#join {padding: 50px 0;}
-#join h2 {font-size: 2.5em;}
-/* Civic */
-#civic {
-  padding: 0 25px 50px;
-}
-.thank-you {
-  text-align: center;
-  background: #e51d2e;
-  color: #fff;
-  font-size: 20px;
-  position: relative;
-  padding-top: 56.25%;
-  padding-top: 17.80%;
-}
-.thank-you-copy-wrapper {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-@media screen and (max-width: 768px) {
-  .thank-you {
-    padding-top: 30%;
-    font-size: 15px;
-  }
-  .link-box {
-      padding: 2px;
-  }
 
-  #fb {
-   display: none !important; 
-  }
-}
-/* Blog */
-#blog{
-  max-width: 1420px;
-  margin: 0 auto;
-  padding-top: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  border-style: solid;
-  border-width: 0px 0px 0px 0px;
-}
-#blog .row-fluid {
-  display: flex !important;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.blog-card {
-  width: 31%;
-  text-align: center;
-  background: #fff;
-  padding: 20px;
-  margin: 30px;
-  min-height: 430px !important;
-  display: flex !important;
-  flex-flow: column nowrap;
-  box-sizing: border-box;
-      box-shadow: 0px 0px 10px #444; 
-    -webkit-box-shadow: 0px 0px 10px #444; 
-    -moz-box-shadow: 0px 0px 10px #444; 
-}
-/* Newsletter */
-#newsletter {
-  background: url("https://s3.amazonaws.com/usc-cache.salvationarmy.org/baf20d9e-3df0-44a5-8eeb-18f2fb661548_newsletterBackgroundDesktop.jpg") no-repeat left;  /* Full height */
-  padding-bottom: 50px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-style: solid;
-  border-width: 0px 0px 10px 0px;
-  border-color: FF2A36
-}
-.newsletter {
-  width: 90%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-/* Wufoo Form */
-#wufoo-me9tu2k0ag75oc, #wufooFormme9tu2k0ag75oc {
-  border-radius: 10px !important;
-}
-/* Salmich Story */
-.salmich-story {
-  padding: 50px 20px;
-}
-.salmich-story .story-photo {
-  text-align: center;
-}
-.salmich-story .story-photo img {
-  border-radius: 10px;
-}
-.salmich-story .caption {
-  margin: 30px 0 0 10px;
-}
-/* Responsive */
-@media screen and (max-width: 1024px) {
-  #blog .blog-card {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto 30px;
-  }
-  #newsletter {
-    background: #333;
-  }
-}
-@media screen and (min-width: 768px) {
-  #new_hero {
-    position: relative;
-  }
-  #copy-wrapper {
-    position: absolute;
-    top: 250px !important;
-  }
-  
-}
-@media screen and (max-width: 980px) {
-  .salmich-story .story-photo, .salmich-story .caption {
-    width: 100% !important;
-    text-align: center;
-    margin: 0;
-  }
-  .salmich-story .caption {
-    margin-top: 20px;
-  }
-}
+
   #sched {
    display: none; 
   }
 @media screen and (max-width: 768px) {
-  .salmich-story .caption {
-    text-align: center;
-  }
   .volunteer-box {
     padding: 10px;
     max-width: 90%;
@@ -1064,246 +927,9 @@ border-bottom: 2px solid red;
    display: initial; 
   }
 }
-@media screen and (min-width: 573px) {
-  .banner {
-    height: 250px;
-    height: 15.625vw;
-    background: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/db308184-1a59-499d-8379-ab7839038d5a_estatePlanningBanner-min.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media screen and (max-width: 573px) {
-  .banner {
-    width: 100%;
-    max-width: 573px;
-    margin: 0 auto;
-    height: 1038px;
-    height: 181.1518vw;
-    background: url('https://s3.amazonaws.com/usc-cache.salvationarmy.org/9a9a59b0-e363-40c4-a8e4-acf991e0b6f2_estatePlanningBannerMobile-min.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  .ribbon {
-    width: 80% !important;
-  }
-}
-/* ribbons */
-.ribbon {
- font-size: 16px !important;
- /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
- width: 50%;
- position: relative;
- background: #E8112D;
- color: #fff;
- text-align: center;
- padding: 1em 2em; /* Adjust to suit */
- margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-.ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.5em solid #AF1E2D;
- z-index: -1;
-}
-.ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
-}
-.ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
-}
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #7C2128 transparent transparent transparent;
- bottom: -1em;
-}
-.ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
-}
-.ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
-}
-.non-semantic-protector { position: relative; z-index: 1; }
-  /*Homepage Specific Properties*/
-  #stgyellow1 {
-    display: none;
-  }
-  #hero_copy {
-    width: 100% !important;
-    max-width: 550px;
-  }
-  #copy-wrapper {
-    position: absolute;
-    top: 250px;
-    padding-left: 10%;
-    padding-right: 10%;
-    letter-spacing: 1px;
-  }
-  #hero_copy h1 {
-    font-size: 3em;
-    letter-spacing: 1px;
-    color: #e4002b;
-    line-height: 66px;
-  }
-  #hero_copy h4 {
-    font-size: 24px;
-    font-family: "Times New Roman", serif;
-    width: 380px;
-    color: #000000;
-    line-height: 40px;
-  }
-  @media screen and (max-width: 1180px) {
-    #copy-wrapper {
-      padding-left: 5%; padding-right: 5%;
-    }
-  }
-  @media screen and (max-width: 1024px) {
-    #hero_copy h1 {
-      font-size: 2.5em;
-    }
-    #hero_copy {
-      max-width: 400px;
-    }
-  }
-  @media screen and (max-width: 980px) {
-    #copy-wrapper {
-      top: 170px;
-    }
-    #sub-sticky, #sub {
-      display: none; 
-    }
-  }
-  @media screen and (max-width: 768px) {
-    #copy-wrapper {
-      position: inherit;
-      text-align:center;
-      padding-bottom: 20px;
-      background: #332e27;
-      margin: 0px;
-      padding-top: 20px;
-      }
-      #hero_copy, #hero_copy h4 {
-        width: 100%; max-width: 100%;
-      }
-      #hero_copy h1 {
-        font-size: 2em; text-shadow: none; color: #fff; line-height: 40px;
-      }
-      #hero_copy h4 {
-        font-size: 20px; text-shadow: none; color: #fff;
-      }
-      #new_hero {
-                    background: url("https://s3.amazonaws.com/usc-cache.salvationarmy.org/52e977ab-a7da-49de-9885-7d6b44b8c1c2_EMI_Christmas_HMPG.jpg") right no-repeat;
-        background-size: cover;
-        height: 250px;
-      }
-      .btn {
-        margin-bottom: 10px;
-      }
-      .three_blocks .span4 {
-        padding: 20px 15px;
-        text-align: center;
-      }
-      #footer {
-          padding: 0 0 20px;
-      }
-    }
-  .EDSalert {
-    width: 89%;
-    margin: 0 auto;
-    margin-top: -10px;
-    margin-bottom: 27px;
-    padding: 15px;
-    background-color: #f2dede;
-    border: 1px solid #ebcccc;
-    color: #a94442;
-    border-radius: .25em;
-    position: relative;
-}
-  .EDSalert h2 {margin-top: 0px;}
-  .closer {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  margin: 10px;
-}
-@media screen and (min-width: 768px) {
-  #wrapper > div.stripe.light.home3 {
-  height: 100%;
-  background: linear-gradient(90deg, #E4E4E4  50%, #C5C2BB  50%);
-  }
-  #new_hero {
-	            background: url("https://s3.amazonaws.com/usc-cache.salvationarmy.org/52e977ab-a7da-49de-9885-7d6b44b8c1c2_EMI_Christmas_HMPG.jpg") right no-repeat;
-    background-size: cover;
-    height: 515px;
-  }
 
-}
-#tsablack { background-color: #000000}
-#bellringer { background-color: #322831}
-#tsawhite { background-color: #ffffff}
-#tsagrey4 { background-color: #ecebe8}
-#tsagrey3 { background-color: rgb(218,215,210)}
-#tsared { background-color: #FC3a3a}
-#tsagrey { background-color: #ECEBE8}
-#tsagrey2 { background-color: #DAD7D2}
-#tsabrown { background-color: #332e27}
-#bedbreadyellow {background-color: #fbd513}
-#emaginePurple { background-color: #812883}
-#stgyellow { background-color: #ffc813}
-#stgyellow1 { background-color: #624500}
-#stgyellow2 { background:url(https://s3.amazonaws.com/usc-cache.salvationarmy.org/e5011302-1b26-41f5-ba62-78a5b2ce744d_EMI-Easter-Homepage-Hero.jpg) no-repeat center;}
-#redkettle { background:url(https://s3.amazonaws.com/usc-cache.salvationarmy.org/8768af06-6937-433a-b4ba-7e0fefb2077e_RedKettleReason2015_SnowfallKids.jpg) no-repeat center;}
-#bedbread { background:url(https://s3.amazonaws.com/usc-cache.salvationarmy.org/cbb12622-9417-4243-a594-168e4a45e0a3_LiveStreamBackGround_HomePage.gif) no-repeat center;}
-#QuarterOneEvents {
-  width: 850px ;
-  margin-left: auto ;
-  margin-right: auto ;
-}
-.wufoo {
-font-family: "trajan-pro","trajan-pro-3-n4","trajan-pro-3",serif !important;
-letter-spacing: .01em;
-}
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-  
-  .header {
-   display: none; 
-  }
-  
-  .social li {
-    margin: 15px 20px; 
-    transition: transform 300ms;
-  }
-  .social li:hover {
-    transform: scale(1.1);
-    
-  }
     @media screen and (max-width: 980px) {
-      .fb-page iframe {
-        width: 450px !important; 
-      }
+
       #locations, #donate, #locations-sticky, #donate-sticky {
         display: none; 
       }
@@ -1331,4 +957,23 @@ letter-spacing: .01em;
   }
   .row-cards {
     justify-content: center; 
+  }
+
+  @media (max-width: 600px){
+      .intro-box-title {
+          width: 90%;
+      }
+      #volunteer {
+          padding-top: 10px !important;
+      }
+      .ssbox {
+          width: 80% !important;
+      }
+      .contact-box {
+          width: 90%;
+          margin-bottom: 20px;
+      }
+      .contact-box div:first-of-type {
+          width: inherit;
+      }
   }
