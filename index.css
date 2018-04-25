@@ -332,10 +332,9 @@ body {
     color: white;
    }
   .document-container {
-    width: 13%;
+    width: 44%;
     min-width: 140px;
-    margin: 15px;
-    cursor: pointer;
+    max-width: 750px;
   }
   .document-hover-box {
     height: 100%;
@@ -353,6 +352,17 @@ body {
   }
   .document-container img {
     width: 100%; 
+  }
+  @media (max-width: 1080px){
+      .document-container {
+          width: 75%;
+      }
+  }
+
+  @media (max-width: 580px){
+      .document-container {
+          width: 90%;
+      }
   }
   .youtube-container {
     width: 560px;
