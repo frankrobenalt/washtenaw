@@ -441,6 +441,9 @@ body {
     transition: opacity 300ms;
     text-decoration: underline;
 }
+.overlay-box a {
+    color: red;
+}
 .overlay-box:hover {
   opacity: 1;
 }
