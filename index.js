@@ -9,7 +9,6 @@ window.onload = ()=>{
     // document.documentElement.style.overflow = 'auto'; 
     // document.body.scroll = "yes";
     const footer = document.getElementById('footer').getClientRects();
-    console.log(footer[0].height + 'px');
     document.getElementById('everything-under-top').style.marginBottom = footer[0].height + 'px';
     document.getElementById('video-background').style.transform = 'scale(1)';
 }
@@ -29,13 +28,6 @@ function hideNav () {
     hideNav();
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-}
-
-function show(target) {
-    document.getElementById(target).style.display = 'block';
-}
-function hide(target) {
-    document.getElementById(target).style.display = 'none';
 }
 
 window.addEventListener('scroll', scrollNav);

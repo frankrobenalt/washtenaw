@@ -632,7 +632,7 @@ body {
   }
   
 
-  .box-title {
+  .box-title h2 {
     border-bottom: 2px solid red;
     margin: 40px auto;
     padding: 20px;
@@ -644,7 +644,7 @@ body {
     max-width: 1425px;
     min-width: 90%;
   }
-  .box-sub-title {
+  .box-sub-title, .box-sub-title h2 {
     margin: 20px auto;
     padding: 20px;
     line-height: 140%;
